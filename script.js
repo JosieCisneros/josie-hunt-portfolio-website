@@ -1,4 +1,8 @@
-const h2 = document.createElement("h2")
-h2.textContent = "This content added by JavaScript"
+const button = document.querySelector("#button")
+const canvas = document.querySelector("#confetti")
 
-document.querySelector("body").appendChild(h2)
+const jsConfetti = new JSConfetti()
+
+button.addEventListener ("click", () => {
+    jsConfetti.addConfetti()
+})
